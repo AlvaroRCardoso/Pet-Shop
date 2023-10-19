@@ -1,19 +1,20 @@
 import { Banner } from "@/components/Banner";
-import { Header } from "@/components/Header";
 import { OurServices } from "@/components/OurServices";
 import { About } from "@/components/About";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
-import { Footer } from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
+    <div>
       <Banner />
       <OurServices />
       <About />
-      <FeaturedProducts />
-      <Footer />
-    </main>
+      <div className=" flex flex-col gap-14 items-center p-20">
+        <h3 className=" text-4xl font-bold text-center">Produtos em destaque</h3>
+          <FeaturedProducts />
+        <Link className=" bg-pink-500 text-white rounded-lg py-2 px-4 w-32 text-center" href="/products">Ver mais</Link>
+      </div>
+    </div>
   )
 }

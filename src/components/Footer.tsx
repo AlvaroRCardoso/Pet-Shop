@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { FaBeer, FaFacebook, FaFacebookF, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
     return(
@@ -24,11 +25,12 @@ export function Footer() {
 
                 <li>
                     <p className=" text-end mb-4">Siga-nos</p>
-                    <div className=" flex gap-3">
-                        <Image width={64} height={64} src="/logo-white.svg" alt="Rede" />
-                        <Image width={64} height={64} src="/logo-white.svg" alt="Rede" />
-                        <Image width={64} height={64} src="/logo-white.svg" alt="Rede" />
-                        <Image width={64} height={64} src="/logo-white.svg" alt="Rede" />
+                    <div className=" flex gap-4 text-2xl">
+                        <FaFacebookF />
+                        <FaInstagram />
+                        <FaTiktok />
+                        <FaTwitter />
+                        <FaYoutube />
                     </div>
                 </li>
             </ul>

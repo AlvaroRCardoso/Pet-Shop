@@ -2,8 +2,7 @@ import Image from "next/image"
 
 export function FeaturedProducts() {
     return(
-        <div className=" flex items-center gap-14 flex-col py-20">
-            <h3 className=" text-4xl font-bold text-center">Produtos em destaque</h3>
+        <div className=" flex items-center flex-col">
             <ul className=" flex flex-wrap w-11/12 gap-4 justify-center">
                 <li className=" flex flex-col gap-4 p-1 rounded-lg items-center w-48 text-center">
                     <Image width={150} height={150} src="/produtos/product-1.webp" alt="Produto" />
@@ -66,7 +65,6 @@ export function FeaturedProducts() {
                     <span className=" text-pink-500 text-base mt-6 font-bold">R$ 114,90</span>
                 </li>
             </ul>
-            <a className=" bg-pink-500 text-white rounded-lg py-2 px-4 w-32 text-center" href="/produtos">Ver mais</a>
         </div>
     )
 }
